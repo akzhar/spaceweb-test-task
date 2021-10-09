@@ -1,0 +1,36 @@
+@import "./consts/const.styl"
+@import "./mixin.styl"
+
+@font-face
+  font-family 'Proxima Nova '
+  font-display swap
+  src: url('./assets/fonts/Proxima Nova.woff2') format('woff2'),
+      url('./assets/fonts/Proxima Nova.woff') format('woff')
+
+html, body
+  margin 0
+  font-family 'Proxima Nova', Arial, sans-serif
+  font-weight 400
+  font-size 16px
+  line-height 20px
+  color black
+
+a
+  color app_color_cyan
+  text-decoration none
+
+img
+  max-width 100%
+
+.visually-hidden
+  hide()
+
+@import "./components/layout/Layout.styl"
+@import "./components/loader/Loader.styl"
+@import "./components/app-menu/AppMenu.styl"
+@import "./components/app-navigation/AppNavigation.styl"
+@import "./components/app-footer/AppFooter.styl"
+@import "./components/notification-menu/NotificationMenu.styl"
+@import "./components/articles-list/ArticlesList.styl"
+@import "./components/article/Article.styl"
+@import "./components/arrow-button/ArrowButton.styl"

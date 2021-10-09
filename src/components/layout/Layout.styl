@@ -1,0 +1,56 @@
+.layout
+  display flex
+  flex-direction column
+  min-height 100vh
+
+  &__wrapper
+    flex-grow 5
+    display grid
+    grid-template-columns 1fr 4fr
+    grid-template-rows 60px 1fr
+
+    & .layout__sidebar
+      grid-column 1/2
+      grid-row 1/4
+      margin-right 20px
+      color white
+      background-color app_color_brand
+
+      & .layout__logo
+        box-sizing border-box
+        height 60px
+        margin-bottom 70px
+        padding 0 20px
+        display flex
+        align-items center
+        bounds()
+
+        &:hover
+          opacity 0.6
+
+        &:active
+          opacity 0.8
+
+    & .layout__header
+      grid-column 2/3
+      grid-row 1/2
+      padding 24px 22px
+      bounds()
+
+    & .layout__content
+      grid-column 2/3
+      grid-row 2/3
+      padding 16px 20px
+      bounds()
+
+      & .layout__content-title
+        margin 0 0 10px 0
+        color app_color_brand
+        text-transform uppercase
+        font-weight 400
+        font-size 12px
+
+  &__footer
+    flex-grow 1
+    padding 20px
+    bounds()

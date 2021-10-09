@@ -1,0 +1,32 @@
+.arrow-button
+	position relative
+	width 7px
+	height 7px
+	border none
+	background-color transparent
+
+	&::before,
+	&::after
+		content ""
+		position absolute
+		width 7px
+		height 1px
+		background-color app_color_cyan
+
+	&::before
+		left 0
+		transform rotate(45deg)
+
+	&::after
+		right 0
+		transform rotate(-45deg)
+
+	&:hover
+		cursor pointer
+
+		&::before,
+		&::after
+			opacity 0.6
+
+.arrow-button--turned
+	transform rotate(180deg)
